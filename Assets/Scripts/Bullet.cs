@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         Destroy(gameObject, 5);
-        GetComponent<Rigidbody>().velocity = transform.forward * 150;
+        GetComponent<Rigidbody>().linearVelocity = transform.forward * 150;
     }
 
     // Update is called once per frame
